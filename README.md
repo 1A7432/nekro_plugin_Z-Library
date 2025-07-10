@@ -36,7 +36,7 @@
 
 **示例：**
 ```
-/exec nekro_plugin_zlibrary.book_search(query="python crash course")
+/exec book_search(query="python crash course")
 ```
 
 **返回结果可能如下：**
@@ -45,7 +45,7 @@
 
 1. Python Crash Course, 2nd Edition
    作者: Eric Matthes | 年份: 2019 | 格式: pdf
-   下载指令: /exec nekro_plugin_zlibrary.get_download_link(book_id='12345', book_hash='abcde')
+   下载指令: /exec get_download_link(book_id='12345', book_hash='abcde')
 
 2. Python Crash Course
    作者: Eric Matthes | 年份: 2016 | 格式: epub
@@ -58,7 +58,7 @@
 
 **示例：**
 ```
-/exec nekro_plugin_zlibrary.get_download_link(book_id='12345', book_hash='abcde')
+/exec get_download_link(book_id='12345', book_hash='abcde')
 ```
 
 插件会返回一个有时效性的直接下载链接，点击即可下载。

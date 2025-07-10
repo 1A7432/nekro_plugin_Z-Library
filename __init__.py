@@ -85,7 +85,7 @@ async def book_search(ctx: AgentCtx, query: str) -> str:
             result_parts.append(
                 f"{i}. {title}\n"
                 f"   作者: {author} | 年份: {year} | 格式: {extension}\n"
-                f"   下载指令: /exec nekro_plugin_zlibrary.get_download_link(book_id='{book_id}', book_hash='{book_hash}')"
+                f"   下载指令: /exec get_download_link(book_id='{book_id}', book_hash='{book_hash}')"
             )
 
         return "\n".join(result_parts)
