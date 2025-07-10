@@ -32,11 +32,11 @@
 
 ### 1. 搜索图书
 
-使用 `/exec` 指令调用 `search` 函数。它会返回一个包含书名、作者、格式和下载指令的列表。
+使用 `/exec` 指令调用 `book_search` 函数。它会返回一个包含书名、作者、格式和下载指令的列表。
 
 **示例：**
 ```
-/exec nekro_plugin_zlibrary.search(query="python crash course")
+/exec nekro_plugin_zlibrary.book_search(query="python crash course")
 ```
 
 **返回结果可能如下：**

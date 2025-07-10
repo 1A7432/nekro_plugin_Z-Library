@@ -45,7 +45,7 @@ config: ZLibConfig = plugin.get_config(ZLibConfig)
 
 # 4. 核心功能：搜索图书
 @plugin.mount_sandbox_method(SandboxMethodType.AGENT, name="搜索图书", description="根据关键词搜索 Z-Library 图书")
-async def search(ctx: AgentCtx, query: str) -> str:
+async def book_search(ctx: AgentCtx, query: str) -> str:
     """根据关键词搜索 Z-Library 图书，并返回格式化的结果列表。"""
     if not config.REMIX_USERID or not config.REMIX_USERKEY:
         return "插件配置不完整，请在插件设置中填写 REMIX_USERID 和 REMIX_USERKEY。"
