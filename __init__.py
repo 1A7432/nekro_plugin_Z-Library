@@ -13,7 +13,7 @@ plugin = NekroPlugin(
     description="通过 Z-Library API 搜索图书并获取下载链接。",
     version="1.0.0",
     author="dirac",
-    url="",  # 稍后可以替换为您的 GitHub 仓库地址
+    url="https://github.com/1A7432/nekro_plugin_Z-Library",
 )
 
 

@@ -5,6 +5,7 @@ description = "通过 Z-Library API 搜索图书并获取下载链接。"
 authors = ["dirac"]
 license = "MIT"
 readme = "README.md"
+repository = "https://github.com/1A7432/nekro_plugin_Z-Library"
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
