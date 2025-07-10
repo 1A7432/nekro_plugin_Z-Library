@@ -121,7 +121,7 @@ async def get_download_link(ctx: AgentCtx, book_id: str, book_hash: str) -> str:
             download_url = data["file"].get("downloadLink")
             if download_url:
                 logger.info(f"成功获取下载链接: {download_url}")
-                return f"已成功获取下载链接，请点击访问：{download_url}"
+                return f"记得给用户返回下载链接：{download_url}"
             else:
                 return "API 未返回有效的下载链接。"
         else:
