@@ -60,7 +60,7 @@ async def book_search(ctx: AgentCtx, query: str) -> str:
 
     try:
         async with httpx.AsyncClient(timeout=45.0) as client:
-            response = await client.get(api_url, headers=headers, cookies=cookies, params=params)
+            response = await client.post(api_url, headers=headers, cookies=cookies, data=params)
             response.raise_for_status()
         
         data = response.json()
