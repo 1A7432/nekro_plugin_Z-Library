@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "nekro-plugin-zlibrary"
+version = "1.0.0"
+description = "通过 Z-Library API 搜索图书并获取下载链接。"
+authors = ["dirac"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+httpx = "^0.27.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
