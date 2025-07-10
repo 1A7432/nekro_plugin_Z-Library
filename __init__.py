@@ -23,7 +23,7 @@ class ZLibConfig(ConfigBase):
     """Z-Library 插件配置"""
 
     API_DOMAIN: str = Field(
-        default="1lib.sk",
+        default="zh.zlibc.ru",
         title="Z-Library API 域名",
         description="用于 API 请求的基础域名。如果官方域名变更，可在此处修改。",
     )

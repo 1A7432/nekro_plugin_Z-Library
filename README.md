@@ -12,7 +12,7 @@
 
 要在 Nekro Agent 中使用此插件，您需要获取并填入以下三项信息：
 
-1.  **API_DOMAIN**: Z-Library 的 API 域名。通常默认为 `1lib.sk`，一般无需修改，除非域名失效。
+1.  **API_DOMAIN**: Z-Library 的 API 域名。通常默认为 `zh.zlibc.ru`，一般无需修改，除非域名失效。
 2.  **REMIX_USERID**: 您的用户 ID。
 3.  **REMIX_USERKEY**: 您的用户密钥。
 
