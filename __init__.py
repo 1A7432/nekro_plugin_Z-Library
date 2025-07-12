@@ -59,7 +59,7 @@ async def book_search(ctx: AgentCtx, query: str) -> str:
     logger.info(f"开始使用 Z-Library 搜索: {query}")
 
     try:
-        async with httpx.AsyncClient(timeout=45.0) as client:
+        async with httpx.AsyncClient(timeout=45.0, follow_redirects=True) as client:
             response = await client.post(api_url, headers=headers, cookies=cookies, data=params)
             response.raise_for_status()
         
@@ -112,7 +112,7 @@ async def get_download_link(ctx: AgentCtx, book_id: str, book_hash: str) -> str:
     logger.info(f"正在为 book_id={book_id} 获取下载链接...")
 
     try:
-        async with httpx.AsyncClient(timeout=45.0) as client:
+        async with httpx.AsyncClient(timeout=45.0, follow_redirects=True) as client:
             response = await client.get(api_url, headers=headers, cookies=cookies)
             response.raise_for_status()
 
